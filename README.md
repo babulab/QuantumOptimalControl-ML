@@ -22,11 +22,11 @@ A key goal of this repository is to provide a flexible and accessible platform f
 
 
 Future improvements to the repository:
-    - New optimisation techniques (Genetic Programing in progress)
-    - A benchmark suite for comparing different optimisation techniques, including new target states
-    - Improvements to the existing Bayesian Optimisation framework, including:
-        - Parallelise training of the GPs associated with the observables
-        - Enhancing the evaluation of GP performance
+- New optimisation techniques (Genetic Programing in progress)
+- A benchmark suite for comparing different optimisation techniques, including new target states
+- Improvements to the existing Bayesian Optimisation framework, including:
+    - Parallelise training of the GPs associated with the observables
+    - Enhancing the evaluation of GP performance
     
 
 
