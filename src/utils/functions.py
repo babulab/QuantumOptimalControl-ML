@@ -8,7 +8,7 @@ from math import pi
 import math
 import matplotlib.pylab as plt
 from itertools import product
-from qiskit.quantum_info import Statevector, Operator, DensityMatrix, state_fidelity
+from qiskit.quantum_info import Statevector, Operator, DensityMatrix, state_fidelity, SparsePauliOp
 import itertools
 import warnings
 from smt.sampling_methods import LHS
@@ -129,11 +129,14 @@ def get_expectation_values_hamiltonian(circuit, thetas, initial_state, H):
     expectation_values = []
     for pauli_op in H:
         coefficient = pauli_op.coeffs
-        observable = pauli_op.to_matrix()
-        expectation = coefficient * statevector.expectation_value(observable)
+        observable = pauli_op.paulis #auli_op.to_matrix()
+        #expectation = coefficient * statevector.expectation_value(observable)
+        observable = SparsePauliOp(observable, coefficient)
+        expectation = statevector.expectation_value(observable)
+
         expectation_values.append( expectation.real )
     expectation_values = -np.array(expectation_values) #Minus because the source code (QOC) was made to maximise, with the minus the code minimise
-    expectation_values = expectation_values.squeeze(-1)
+   # expectation_values = expectation_values.squeeze(-1)
     return expectation_values, np.sum(expectation_values)
 
 
