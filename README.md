@@ -18,6 +18,9 @@ Currently, the repository implements optimisation techniques based on: Bayesian 
 
 A key goal of this repository is to provide a flexible and accessible platform for research. To achieve this, the components of the algorithm are lightly packaged, allowing for easy customization and modification.
 
+
+If you are interested in visiting the final results of this repository you can check out the jupyter notebook [Results](https://github.com/babulab/QuantumOptimalControl-ML/blob/main/notebooks/Results.ipynb).
+
 ## Future Updates 
 
 
