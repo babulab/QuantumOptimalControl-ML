@@ -1,0 +1,8 @@
+num_qubits: 3
+num_iters: 200  # Number of training steps
+n_run: 5
+
+target_state: [1, 0, 0, 0, 0, 0, 0, 1]  
+initial_state: [1, 0, 0, 0, 0, 0, 0, 0]  
+
+output_path_results: "../../results/best_trial_3ghz_spsa.json"

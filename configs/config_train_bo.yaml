@@ -1,0 +1,10 @@
+num_qubits: 3
+num_iters: 200  # Number of training steps
+
+#target_state: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ]  
+#initial_state: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+target_state: [1, 0, 0, 0, 0, 0, 0, 1]  
+initial_state: [1, 0, 0, 0, 0, 0, 0, 0] 
+
+n_run: 5
+output_path_results: "../../results/best_trial_3ghz_bo_fidelity_TEST.json"
