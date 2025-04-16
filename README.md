@@ -12,7 +12,7 @@ The diagram below outlines the general optimisation framework. While the depicte
 ![Diagram](https://github.com/babulab/QuantumOptimalControl-ML/blob/main/figures/diagram_exp.jpg?raw=true)
 
 
-Currently, the repository includes implementations of the following optimization techniques:
+Currently, the repository includes implementations of the following optimisation techniques:
 - Bayesian Optimisation
 - Reinforcement Learning
 - Simultaneous Perturbation Stochastic Approximation (SPSA)
